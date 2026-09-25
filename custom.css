@@ -1,0 +1,53 @@
+
+/* =========================================
+   CUSTOM CAKE
+========================================= */
+
+.custom-cake {
+    background: white;
+}
+
+.custom-box {
+    background: var(--primary);
+    color: white;
+    border-radius: 25px;
+    padding: 55px 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.custom-box .small-title {
+    color: #ffdce2;
+}
+
+.custom-box h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    line-height: 1.15;
+}
+
+.custom-box-p {
+    color: #f9dfe3;
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   CUSTOM CAKE RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .custom-box {
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .custom-box h2 {
+        font-size: 38px;
+    }
+
+}

@@ -1,0 +1,85 @@
+
+/* =========================================
+   OFFER
+========================================= */
+
+.offer {
+    background: var(--cream);
+}
+
+.offer-box {
+    min-height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    overflow: hidden;
+    border-radius: 25px;
+    background: var(--primary);
+    color: white;
+}
+
+.offer-content {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offer-content .small-title {
+    color: #ffdce2;
+}
+
+.offer-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(38px, 5vw, 55px);
+    line-height: 1.1;
+    max-width: 550px;
+}
+
+.offer-content-p {
+    color: #f9dfe3;
+    margin: 20px 0;
+    max-width: 500px;
+}
+
+.offer-code {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.offer-code strong {
+    background: white;
+    color: var(--primary);
+    padding: 7px 12px;
+    border-radius: 5px;
+}
+
+.offer-image {
+    min-height: 450px;
+}
+
+.offer-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   OFFER RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .offer-box {
+        grid-template-columns: 1fr;
+
+    }
+
+    .offer-content {
+        padding: 45px 30px;
+    }
+
+    .offer-image {
+        order: -1;
+    }
+
+}

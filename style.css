@@ -1,0 +1,142 @@
+
+/* =========================================
+   RESET
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #332525;
+    background: #fffaf7;
+    line-height: 1.6;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+/* =========================================
+   VARIABLES
+========================================= */
+:root {
+
+    --primary: #a84c5a;
+    --primary-dark: #813744;
+    --cream: #fffaf7;
+    --light-pink: #fbecef;
+    --soft-pink: #f5dfe3;
+    --dark: #332525;
+    --gray: #746969;
+    --white: #ffffff;
+    --border: #eadbdd;
+    --shadow:
+        0 15px 40px rgba(80, 35, 40, 0.10);
+    --radius: 18px;
+}
+/* =========================================
+   COMMON
+========================================= */
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
+}
+.section {
+    padding: 100px 0;
+}
+.small-title {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.section-heading.center {
+    display: block;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.15;
+    color: var(--dark);
+}
+.section-heading p:not(.small-title) {
+    color: var(--gray);
+    margin-top: 12px;
+}
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+.primary-btn {
+    background: var(--primary);
+    color: white;
+}
+.primary-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-3px);
+}
+.secondary-btn {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+.secondary-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+.white-btn {
+    background: white;
+    color: var(--primary);
+}
+.white-btn:hover {
+    transform: translateY(-3px);
+}
+/* =========================================
+   RESPONSIVE - COMMON
+========================================= */
+@media (max-width: 700px) {
+    .container {
+        width: 95%;
+    }
+    .section {
+        padding: 70px 0;
+    }
+    .section-heading {
+        display: block;
+    }
+    .section-heading h2 {
+        font-size: 38px;
+    }
+
+}

@@ -1,0 +1,103 @@
+
+/* =========================================
+   FEATURED CAKE
+========================================= */
+
+.featured {
+    background: var(--light-pink);
+}
+
+.featured-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.featured-image img {
+    height: 100%;
+    min-height: 550px;
+    object-fit: cover;
+}
+
+.featured-content {
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.featured-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    line-height: 1.15;
+}
+
+.featured-rating {
+    color: #f2b01e;
+    margin: 15px 0;
+}
+
+.featured-content-p {
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.cake-list {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.cake-list li {
+    margin-bottom: 8px;
+    color: #584a4a;
+    font-size: 14px;
+}
+
+.featured-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.featured-price strong {
+    color: var(--primary);
+    font-size: 30px;
+}
+
+.featured-price span {
+    color: var(--gray);
+    font-size: 12px;
+}
+
+
+/* =========================================
+   FEATURED RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .featured-box {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-image img {
+        min-height: 450px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .featured-content {
+        padding: 40px 25px;
+    }
+
+    .featured-content h2 {
+        font-size: 38px;
+    }
+
+}

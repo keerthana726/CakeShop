@@ -1,0 +1,129 @@
+
+/* =========================================
+   CAKE CARDS
+========================================= */
+
+.cakes {
+    background: var(--cream);
+}
+
+.view-link {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.cake-card {
+    background: white;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(70, 35, 35, 0.06);
+    transition: 0.3s;
+}
+
+.cake-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.cake-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cake-image img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.cake-card:hover .cake-image img {
+    transform: scale(1.08);
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--primary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.cake-content {
+    padding: 22px;
+}
+
+.cake-rating {
+    color: #f2b01e;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.cake-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cake-content p {
+    color: var(--gray);
+    font-size: 13px;
+    min-height: 62px;
+}
+
+.cake-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.cake-bottom strong {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.cake-bottom a {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CAKES RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .cake-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .view-link {
+        display: inline-block;
+        margin-top: 15px;
+    }
+
+    .cake-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

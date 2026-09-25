@@ -1,0 +1,147 @@
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+    background: var(--cream);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.15;
+    color: var(--dark);
+}
+
+.contact-info-p {
+    color: var(--gray);
+    margin: 20px 0 30px;
+}
+
+.contact-details {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.contact-item-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--light-pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.contact-item p {
+    color: var(--gray);
+    font-size: 13px;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.contact-form h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 13px 15px;
+    outline: none;
+    background: #fffdfc;
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(168, 76, 90, 0.08);
+}
+
+.form-btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CONTACT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .contact-container {
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .contact-info h2 {
+        font-size: 38px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+}

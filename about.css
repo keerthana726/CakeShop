@@ -1,0 +1,99 @@
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+    background: white;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image  img {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.experience-card {
+    position: absolute;
+    bottom: 30px;
+    right: -25px;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.experience-card strong {
+    color: var(--primary);
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+}
+
+.experience-card span {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.about-content h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.15;
+    color: var(--dark);
+}
+
+.about-content-p {
+    color: var(--gray);
+    margin: 20px 0;
+}
+
+.about-content .btn {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   ABOUT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .about-container {
+        gap: 50px;
+    }
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+    .about-image > img {
+        height: 450px;
+    }
+
+    .experience-card {
+        right: 10px;
+    }
+
+}
